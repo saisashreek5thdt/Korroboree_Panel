@@ -13,9 +13,9 @@
       <!-- Google font-->
       <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i&amp;display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900&amp;display=swap" rel="stylesheet">
-      <!-- FontAwesome Icons--> 
+	  <!-- FontAwesome Icons--> 
       <link rel="stylesheet" type="text/css" href="../assets/css/all.css">
-	  <link rel="stylesheet" type="text/css" href="../assets/css/fontawesome.css">
+	  <link rel="stylesheet" type="text/css" href="../assets/css/fontawesome.css"> 
       <!-- ico-font-->
       <link rel="stylesheet" type="text/css" href="../assets/css/vendors/icofont.css">
       <!-- Themify icon-->
@@ -25,7 +25,9 @@
       <!-- Feather icon-->
       <link rel="stylesheet" type="text/css" href="../assets/css/vendors/feather-icon.css">
       <!-- Plugins css start-->
-      <link rel="stylesheet" type="text/css" href="../assets/css/vendors/datatables.css">
+      <link rel="stylesheet" type="text/css" href="../assets/css/vendors/animate.css">
+      <link rel="stylesheet" type="text/css" href="../assets/css/vendors/chartist.css">
+      <link rel="stylesheet" type="text/css" href="../assets/css/vendors/date-picker.css">
       <!-- Plugins css Ends-->
       <!-- Bootstrap css-->
       <link rel="stylesheet" type="text/css" href="../assets/css/vendors/bootstrap.css">
@@ -208,7 +210,7 @@
                         </li>
                         <li class="sidebar-list">
                             <label class="badge badge-danger">New</label>
-							<a class="sidebar-link sidebar-title link-nav" href="topic_list.html">
+							<a class="sidebar-link sidebar-title link-nav" href="#">
 								<i data-feather="box"></i>
 								<span>Topics</span>
 							</a>
@@ -255,7 +257,7 @@
                   <div class="page-title">
                      <div class="row">
                         <div class="col-6">
-                           <h3>Episodes List</h3>
+                           <h3>Home</h3>
                         </div>
                         <div class="col-6">
                            <ol class="breadcrumb">
@@ -264,7 +266,6 @@
 									  <i data-feather="home"></i>
 								  </a>
 							  </li>
-							  <li class="breadcrumb-item">Episodes</li> 
                            </ol>
                         </div>
                      </div>
@@ -272,207 +273,142 @@
                </div>
                <!-- Container-fluid starts-->
                <div class="container-fluid">
-                  <div class="row">
-					  <div class="col-sm-12">
-						<div class="card">
-						  <div class="card-header">
-							  <h5>List of Episodes Created by Korroboree Team</h5>
-							  <div class="card-header-right">
-								  <h6>
-									  <a href="episode_create_new.html">Create New Episode</a>
-								  </h6>
-								  <h6>
-									  <a href="episode_tracker.html">Episode Tracker</a>
-								  </h6>
-							  </div> 
-						  </div>
-						  <div class="card-body">
-							<div class="table-responsive">
-							  <table class="display" id="basic-10">
-								<thead>
-								  <tr>
-									<th>Name</th>
-									<th>Month</th>
-									<th>Topics</th>
-									<th>Editor</th>
-									<th>Tracking</th>
-									<th>Actions</th>
-									<th>Push Live</th>  
-								  </tr>
-								</thead>
-								<tbody>
-								  <tr>
-									<td>Episode 1</td>
-									<td>Jan, 25</td>
-									<td>15</td>
-									<td>Sashreek</td>
-									<td>
-										<div class="project-status mt-0">
-											<div class="media">
-												<p>70%</p>
-												<div class="media-body text-right"><span>Done</span></div>
-											</div>
-											<div class="progress" style="height: 5px">
-												<div class="progress-bar-animated bg-primary progress-bar-striped" role="progressbar" style="width: 70%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-											</div>
-										</div>
-									</td>
-									<td>
-										<ul class="list-unstyled card-option">
-											<li style="float: left !important; padding: 0 10px !important;">
-												<a href="episode_view.html">
-													<i data-feather="eye"></i>
-												</a>
-											</li>
-											<li style="float: left !important; padding: 0 10px !important;">
-												<a href="episode_edit.html">
-													<i data-feather="edit"></i>
-												</a>
-											</li>
-											<li style="float: left !important; padding: 0 10px !important;">
-												<a href="#">
-													<i data-feather="trash-2"></i>
-												</a>
-											</li>
-										</ul>
-									</td>
-									<td>
-										<a class="btn btn-danger" href="#">Push</a>
-									</td>
-								  </tr>
-								  <tr>
-									<td>Episode 2</td>
-									<td>Jan, 25</td>
-									<td>15</td>
-									<td>Sashreek</td>
-									<td>
-										<div class="project-status mt-0">
-											<div class="media">
-												<p>30%</p>
-												<div class="media-body text-right"><span>Done</span></div>
-											</div>
-											<div class="progress" style="height: 5px">
-												<div class="progress-bar-animated bg-danger progress-bar-striped" role="progressbar" style="width: 30%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-											</div>
-										</div>
-									</td>
-									<td>
-										<ul class="list-unstyled card-option">
-											<li style="float: left !important; padding: 0 10px !important;">
-												<a href="episode_view.html">
-													<i data-feather="eye"></i>
-												</a>
-											</li>
-											<li style="float: left !important; padding: 0 10px !important;">
-												<a href="episode_edit.html">
-													<i data-feather="edit"></i>
-												</a>
-											</li>
-											<li style="float: left !important; padding: 0 10px !important;">
-												<a href="#">
-													<i data-feather="trash-2"></i>
-												</a>
-											</li>
-										</ul>
-									</td>
-									<td>
-										<a class="btn btn-danger" href="#">Push</a>
-									</td>
-								  </tr>
-								  <tr>
-									<td>Episode 3</td>
-									<td>Jan, 25</td>
-									<td>15</td>
-									<td>Sashreek</td>
-									<td>
-										<div class="project-status mt-0">
-											<div class="media">
-												<p>50%</p>
-												<div class="media-body text-right"><span>Done</span></div>
-											</div>
-											<div class="progress" style="height: 5px">
-												<div class="progress-bar-animated bg-warning progress-bar-striped" role="progressbar" style="width: 50%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-											</div>
-										</div>
-									</td>
-									<td>
-										<ul class="list-unstyled card-option">
-											<li style="float: left !important; padding: 0 10px !important;">
-												<a href="episode_view.html">
-													<i data-feather="eye"></i>
-												</a>
-											</li>
-											<li style="float: left !important; padding: 0 10px !important;">
-												<a href="episode_edit.html">
-													<i data-feather="edit"></i>
-												</a>
-											</li>
-											<li style="float: left !important; padding: 0 10px !important;">
-												<a href="#">
-													<i data-feather="trash-2"></i>
-												</a>
-											</li>
-										</ul>
-									</td>
-									<td>
-										<a class="btn btn-danger" href="#">Push</a>
-									</td>
-								  </tr>
-								  <tr>
-									<td>Episode 4</td>
-									<td>Jan, 25</td>
-									<td>15</td>
-									<td>Sashreek</td>
-									<td>
-										<div class="project-status mt-0">
-											<div class="media">
-												<p>100%</p>
-												<div class="media-body text-right"><span>Done</span></div>
-											</div>
-											<div class="progress" style="height: 5px">
-												<div class="progress-bar-animated bg-success progress-bar-striped" role="progressbar" style="width: 100%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-											</div>
-										</div>
-									</td>
-									<td>
-										<ul class="list-unstyled card-option" style="float: left !important;">
-											<li style="float: left !important; padding: 0 10px !important;">
-												<a href="episode_view.html">
-													<i data-feather="eye"></i>
-												</a>
-											</li>
-											<li style="float: left !important; padding: 0 10px !important;">
-												<a href="episode_edit.html">
-													<i data-feather="edit"></i>
-												</a>
-											</li>
-											<li style="float: left !important; padding: 0 10px !important;">
-												<a href="#">
-													<i data-feather="trash-2"></i>
-												</a>
-											</li>
-										</ul>
-									</td>
-									<td>
-										<a class="btn btn-danger" href="#">Push</a>
-									</td>
-								  </tr>	
-								</tbody>
-								<tfoot>
-								  <tr>
-									<th>Name</th>
-									<th>Date</th>
-									<th>Topics</th>
-									<th>Editor</th>
-									<th>Tracking</th>
-									<th>Actions</th>
-								  </tr>
-								</tfoot>
-							  </table>
-							</div>
-						  </div>
-						</div>
-					  </div>
+                  <div class="row second-chart-list third-news-update">
+                     <div class="col-xl-4 col-lg-12 xl-50 morning-sec box-col-12">
+                        <div class="card o-hidden profile-greeting">
+                           <div class="card-body">
+                              <div class="media">
+                                 <div class="badge-groups w-100">
+                                    <div class="badge f-12"><i class="mr-1" data-feather="clock"></i><span id="txt"></span></div>
+                                    <div class="badge f-12"><i class="fa fa-spin fa-cog f-14"></i></div>
+                                 </div>
+                              </div>
+                              <div class="greeting-user text-center">
+                                 <div class="profile-vector">
+									 <img class="img-fluid" src="../assets/images/dashboard/welcome.png" alt="">
+								 </div>
+                                 <h4 class="f-w-600">
+									 <span id="greeting">Good Morning</span> 
+									 <span class="right-circle">
+										 <i class="fa fa-check-circle f-14 middle"></i>
+									 </span>
+								 </h4>
+                                 <p>
+									 <span> 
+										 Today's earrning is $405 &amp; your sales increase rate is 3.7 over the last 24 hours
+									 </span>
+								 </p>
+                                 <div class="whatsnew-btn">
+									 <a class="btn btn-primary">Whats New !</a>
+								 </div>
+                                 <div class="left-icon">
+									 <i class="fa fa-bell"></i>
+								 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+					 <div class="col-xl-4 col-lg-12 xl-50 calendar-sec box-col-6">
+                        <div class="card gradient-primary o-hidden">
+                           <div class="card-body">
+                              <div class="setting-dot">
+                                 <div class="setting-bg-primary date-picker-setting position-set pull-right">
+									 <i class="fa fa-spin fa-cog"></i>
+								 </div>
+                              </div>
+                              <div class="default-datepicker">
+                                 <div class="datepicker-here" data-language="en"></div>
+                              </div>
+                              <span class="default-dots-stay overview-dots full-width-dots">
+								  <span class="dots-group">
+									  <span class="dots dots1"></span>
+									  <span class="dots dots2 dot-small"></span>
+									  <span class="dots dots3 dot-small"></span>
+									  <span class="dots dots4 dot-medium"></span>
+									  <span class="dots dots5 dot-small"></span>
+									  <span class="dots dots6 dot-small"></span>
+									  <span class="dots dots7 dot-small-semi"></span>
+									  <span class="dots dots8 dot-small-semi"></span>
+									  <span class="dots dots9 dot-small"></span>
+								  </span>
+							  </span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-4 xl-50 news box-col-6">
+                        <div class="card">
+                           <div class="card-header">
+                              <div class="header-top">
+                                 <h5 class="m-0">News &amp; Update</h5>
+                                 <div class="card-header-right-icon">
+                                    <select class="button btn btn-primary">
+                                       <option>Today</option>
+                                       <option>Tomorrow</option>
+                                       <option>Yesterday</option>
+                                    </select>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="card-body p-0">
+                              <div class="news-update">
+                                 <h6>36% off For pixel lights Couslations Types.</h6>
+                                 <span>Lorem Ipsum is simply dummy...</span>
+                              </div>
+                              <div class="news-update">
+                                 <h6>We are produce new product this</h6>
+                                 <span> Lorem Ipsum is simply text of the printing... </span>
+                              </div>
+                              <div class="news-update">
+                                 <h6>50% off For COVID Couslations Types.</h6>
+                                 <span>Lorem Ipsum is simply dummy...</span>
+                              </div>
+                           </div>
+                           <div class="card-footer">
+                              <div class="bottom-btn"><a href="#">More...</a></div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-4 xl-50 notification box-col-6">
+                        <div class="card">
+                           <div class="card-header card-no-border">
+                              <div class="header-top">
+                                 <h5 class="m-0">notification</h5>
+                                 <div class="card-header-right-icon">
+                                    <select class="button btn btn-primary">
+                                       <option>Today</option>
+                                       <option>Tomorrow</option>
+                                       <option>Yesterday</option>
+                                    </select>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="card-body pt-0">
+                              <div class="media">
+                                 <div class="media-body">
+                                    <p>20-04-2020 <span>10:10</span></p>
+                                    <h6>Updated Product<span class="dot-notification"></span></h6>
+                                    <span>Quisque a consequat ante sit amet magna...</span>
+                                 </div>
+                              </div>
+                              <div class="media">
+                                 <div class="media-body">
+                                    <p>20-04-2020<span class="pl-1">Today</span><span class="badge badge-secondary">New</span></p>
+                                    <h6>Tello just like your product<span class="dot-notification"></span></h6>
+                                    <span>Quisque a consequat ante sit amet magna... </span>
+                                 </div>
+                              </div>
+                              <div class="media">
+                                 <div class="media-body">
+                                    <div class="d-flex mb-3">
+                                       <div class="inner-img"><img class="img-fluid" src="../assets/images/notification/1.jpg" alt="Product-1"></div>
+                                       <div class="inner-img"><img class="img-fluid" src="../assets/images/notification/2.jpg" alt="Product-2"></div>
+                                    </div>
+                                    <span class="mt-3">Quisque a consequat ante sit amet magna...</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
                   </div>
                </div>
                <!-- Container-fluid Ends-->
@@ -496,7 +432,7 @@
       <script src="../assets/js/bootstrap/bootstrap.js"></script>
 	  <!-- fontawesome icon js-->
 	  <script type="text/javascript" src="../assets/js/all.js"></script>
-	  <script type="text/javascript" src="../assets/js/fontawesome.js"></script> 
+	  <script type="text/javascript" src="../assets/js/fontawesome.js"></script>
       <!-- feather icon js-->
       <script src="../assets/js/icons/feather-icon/feather.min.js"></script>
       <script src="../assets/js/icons/feather-icon/feather-icon.js"></script>
@@ -504,8 +440,12 @@
       <script src="../assets/js/config.js"></script>
       <!-- Plugins JS start-->
       <script src="../assets/js/sidebar-menu.js"></script>
-      <script src="../assets/js/datatable/datatables/jquery.dataTables.min.js"></script>
-      <script src="../assets/js/datatable/datatables/datatable.custom.js"></script>
+      <script src="../assets/js/notify/bootstrap-notify.min.js"></script>
+      <script src="../assets/js/dashboard/default.js"></script>
+      <script src="../assets/js/notify/index.js"></script>
+      <script src="../assets/js/datepicker/date-picker/datepicker.js"></script>
+      <script src="../assets/js/datepicker/date-picker/datepicker.en.js"></script>
+      <script src="../assets/js/datepicker/date-picker/datepicker.custom.js"></script>
       <script src="../assets/js/tooltip-init.js"></script>
       <!-- Plugins JS Ends-->
       <!-- Theme js-->
