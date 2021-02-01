@@ -34,8 +34,8 @@ $(function() {
             reverse: true,
             hoverState: false
         });
-        $('#u-rating-fontawesome').barrating({
-            theme: 'fontawesome-stars',
+        $('#u-rating-fontawesome-o').barrating({
+            theme: 'fontawesome-regular-stars',
             showSelectedRating: false
         });
         $('#u-rating-css').barrating({
@@ -49,7 +49,7 @@ $(function() {
             $('#u-rating-fontawesome-o').barrating('clear');
         });
         $('#u-rating-fontawesome-o').barrating({
-            theme: 'fontawesome-stars-o',
+            theme: 'fontawesome-regular-stars',
             showSelectedRating: false,
             initialRating: currentRating,
             onSelect: function(value, text) {
